@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
  * @author twistezo (13.03.2017)
  */
 public class SceneController {
-    private static final ClassLoader LOADER = SceneController.class.getClassLoader();
+    private final String NOTE_FILE_PATH = "note.txt";
     private int currentPosition;
     private ArrayList<String> noteList;
     private Random random;
@@ -91,10 +91,9 @@ public class SceneController {
      * delimiter "\\R\\" (double enter)
      */
     private void generateNoteTextFromFile() {
+        File file = new File(NOTE_FILE_PATH);
         try {
-            scanner = new Scanner(
-                    new File(LOADER.getResource("note.txt")
-                            .getFile()), "cp1250");
+            scanner = new Scanner((file), "cp1250");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
