@@ -93,7 +93,7 @@ public class SceneController {
     private void generateNoteTextFromFile() {
         File file = new File(NOTE_FILE_PATH);
         try {
-            scanner = new Scanner((file), "cp1250");
+            scanner = new Scanner((file.getAbsoluteFile()), "cp1250");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
