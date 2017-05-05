@@ -1,1 +1,1 @@
-mvn jfx:jar
+mvn jfx:jar && move note.txt target\jfx\app\
