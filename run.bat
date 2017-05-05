@@ -1,0 +1,1 @@
+cd target\jfx\app\ && start java-learning-notes-1.0-SNAPSHOT-jfx.jar
