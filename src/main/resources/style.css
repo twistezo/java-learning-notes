@@ -1,0 +1,22 @@
+.blue #textArea {
+-fx-background-insets: 0;
+-fx-background-color: transparent, #cae8ff, transparent, #cae8ff;
+}
+
+.blue #textArea .content {
+    -fx-background-color: transparent, #cae8ff, transparent, #cae8ff;
+}
+
+.green #textArea {
+-fx-background-insets: 0;
+-fx-background-color: transparent, #c7efc4, transparent, #c7efc4;
+}
+
+.green #textArea .content {
+    -fx-background-color: transparent, #c7efc4, transparent, #c7efc4;
+}
+
+#anchorPane {
+    -fx-background-color: #535353;
+}
+
